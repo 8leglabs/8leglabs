@@ -1,10 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>8LegLabs Blog.</title>
+  <title>8LegLabs Blog | Tarantula Care, Spider Science & More</title>
+  <meta name="description" content="Read the 8LegLabs Blog: expert tarantula care tips, weird spider science, moulting support, myths, and pet tarantula trends.">
+  <link rel="canonical" href="https://8leglabs.com/blog.html" />
+  <meta property="og:title" content="8LegLabs Blog | Tarantula Care, Spider Science & More">
+  <meta property="og:description" content="Expert tarantula care tips and wild spider facts. From moulting help to zombie spiders — explore the 8LegLabs blog.">
+  <meta property="og:image" content="https://8leglabs.com/images/8leglabs-blog-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="8LegLabs Blog | Tarantula Tips, Spider Science & More">
+  <meta name="twitter:description" content="Explore fascinating facts about tarantulas and spider care — from zombie fungi to glowing myths.">
+  <meta name="twitter:image" content="https://8leglabs.com/images/8leglabs-blog-cover.jpg">
+
   <style>
     body {
       margin: 0;
@@ -27,37 +37,67 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
       padding: 20px;
     }
     h1 {
       text-align: center;
       color: #f0f0f0;
-      font-size: 2em;
+      font-size: 2.2em;
+      margin-bottom: 30px;
     }
     .blog-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
     }
     .blog-item {
       background: #2a2a2a;
       padding: 20px;
-      border-radius: 8px;
-      flex: 1 1 calc(50% - 20px);
+      border-radius: 10px;
       box-sizing: border-box;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .blog-item:hover {
+      background: #333;
+      transform: translateY(-3px);
     }
     .blog-item a {
       text-decoration: none;
-      color: #a8d0e6;
-      font-weight: bold;
-      font-size: 1.1em;
+      color: inherit;
+      display: block;
     }
-    .blog-item a:hover {
-      text-decoration: underline;
+    .blog-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .blog-item h2 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #a8d0e6;
+    }
+    .blog-item p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+    @media (max-width: 600px) {
+      .blog-item {
+        padding: 15px;
+      }
+      .blog-item h2 {
+        font-size: 1em;
+      }
+      .blog-item p {
+        font-size: 0.9em;
+      }
     }
   </style>
 </head>
@@ -69,23 +109,64 @@
       <a href="about-us.html">Our Story</a>
     </nav>
   </header>
+
   <div class="container">
     <h1>8LegLabs Blog</h1>
     <div class="blog-list">
-      <div class="blog-item"><a href="blog-post-10-moult-signs.html">10 Signs Your Tarantula Is Going to Moult</a></div>
-      <div class="blog-item"><a href="blog-post-red-silk-spider-myth.html">The Truth About the Glowing Red Silk Spider</a></div>
-      <div class="blog-item"><a href="blog-post-1.html">Why Tarantula Moulting Is So Risky</a></div>
-      <div class="blog-item"><a href="blog-post-pre-moult-signs.html">Pre-Moult Signs: What to Watch For</a></div>
-      <div class="blog-item"><a href="blog-post-lost-tarantula-moult.html">Lost a Tarantula? You’re Not Alone</a></div>
-      <div class="blog-item"><a href="blog-post-4.html">Hydration & Moulting: The Critical Link</a></div>
-      <div class="blog-item"><a href="blog-post-5.html">The Post-Moult Period: Quiet but Crucial</a></div>
-      <div class="blog-item"><a href="blog-post-6.html">Understanding Supplement Safety for Inverts</a></div>
-      <div class="blog-item"><a href="blog-post-7.html">Debunking the Water Bowl Myth</a></div>
-      <div class="blog-item"><a href="blog-post-8.html">Why We Made MoultMend</a></div>
-      <div class="blog-item"><a href="blog-post-9.html">Rehydration Techniques that Actually Work</a></div>
-      <div class="blog-item"><a href="blog-post-10.html">Why Tarantulas Moult Upside Down</a></div>
-      <div class="blog-item"><a href="blog-post-11.html">11 Fascinating Facts About Tarantulas</a></div>
-      <div class="blog-item"><a href="blog-post-12.html">Choosing the Right Enclosure for Safer Moults</a></div>
+
+      <!-- New SEO-Optimised Posts -->
+      <div class="blog-item">
+        <a href="zombie-spiders.html">
+          <img src="images/zombie-spiders.jpg" alt="Fungus-infected zombie spider" loading="lazy">
+          <h2>Zombie Spiders: The Parasite That Takes Over Their Mind</h2>
+          <p>A terrifying fungus takes over spiders and makes them do its bidding. Real science, real horror.</p>
+        </a>
+      </div>
+      <div class="blog-item">
+        <a href="tarantula-rain.html">
+          <img src="images/tarantula-rain.jpg" alt="Thousands of tarantulas migrating across desert terrain" loading="lazy">
+          <h2>Tarantula Rain: The Migration That Covers the Desert in Spiders</h2>
+          <p>Every year, tarantulas cross U.S. deserts in huge numbers. Discover the fascinating reason why.</p>
+        </a>
+      </div>
+      <div class="blog-item">
+        <a href="glow-in-the-dark-spiders.html">
+          <img src="images/glow-in-the-dark-spiders.jpg" alt="Spider glowing green under UV light" loading="lazy">
+          <h2>Glow-in-the-Dark Spiders: What’s Real and What’s Photoshop?</h2>
+          <p>Do spiders really glow? Some do — under UV light. Find out which claims are real and which are fake.</p>
+        </a>
+      </div>
+      <div class="blog-item">
+        <a href="spider-silk-vs-kevlar.html">
+          <img src="images/spider-silk-vs-kevlar.jpg" alt="Spider web representing strength of spider silk vs. Kevlar" loading="lazy">
+          <h2>World’s Strongest Material: Why Spider Silk Still Beats Kevlar</h2>
+          <p>Stronger than steel, stretchier than nylon — here's why spider silk is still unbeaten by manmade tech.</p>
+        </a>
+      </div>
+      <div class="blog-item">
+        <a href="pet-tarantula-trend.html">
+          <img src="images/pet-tarantula-trend.jpg" alt="Close-up of a pet tarantula with reddish hairs" loading="lazy">
+          <h2>Are Pet Tarantulas the Next Big Thing?</h2>
+          <p>Searches for pet spiders are exploding. Here’s why tarantulas are trending — and maybe the perfect pet.</p>
+        </a>
+      </div>
+
+      <!-- Existing Blog Posts (Simple List) -->
+      <div class="blog-item"><a href="blog-post-10-moult-signs.html"><h2>10 Signs Your Tarantula Is Going to Moult</h2></a></div>
+      <div class="blog-item"><a href="blog-post-red-silk-spider-myth.html"><h2>The Truth About the Glowing Red Silk Spider</h2></a></div>
+      <div class="blog-item"><a href="blog-post-1.html"><h2>Why Tarantula Moulting Is So Risky</h2></a></div>
+      <div class="blog-item"><a href="blog-post-pre-moult-signs.html"><h2>Pre-Moult Signs: What to Watch For</h2></a></div>
+      <div class="blog-item"><a href="blog-post-lost-tarantula-moult.html"><h2>Lost a Tarantula? You’re Not Alone</h2></a></div>
+      <div class="blog-item"><a href="blog-post-4.html"><h2>Hydration & Moulting: The Critical Link</h2></a></div>
+      <div class="blog-item"><a href="blog-post-5.html"><h2>The Post-Moult Period: Quiet but Crucial</h2></a></div>
+      <div class="blog-item"><a href="blog-post-6.html"><h2>Understanding Supplement Safety for Inverts</h2></a></div>
+      <div class="blog-item"><a href="blog-post-7.html"><h2>Debunking the Water Bowl Myth</h2></a></div>
+      <div class="blog-item"><a href="blog-post-8.html"><h2>Why We Made MoultMend</h2></a></div>
+      <div class="blog-item"><a href="blog-post-9.html"><h2>Rehydration Techniques that Actually Work</h2></a></div>
+      <div class="blog-item"><a href="blog-post-10.html"><h2>Why Tarantulas Moult Upside Down</h2></a></div>
+      <div class="blog-item"><a href="blog-post-11.html"><h2>11 Fascinating Facts About Tarantulas</h2></a></div>
+      <div class="blog-item"><a href="blog-post-12.html"><h2>Choosing the Right Enclosure for Safer Moults</h2></a></div>
+
     </div>
   </div>
 </body>
